@@ -27,7 +27,7 @@
     "url": "https://github.com/z3by/vuepress-blog-template/issues"
   },
   "homepage": "https://github.com/z3by/vuepress-blog-template#readme",
-  "dependencies": {
+  "devDependencies": {
     "@vuepress/plugin-blog": "^1.2.5",
     "@vuepress/theme-blog": "^1.2.5",
     "vuepress": "^1.1.0"

@@ -81,7 +81,11 @@
     margin-bottom 25px
     border-radius: 14px;
     border-bottom 1px solid #f1f1f1
+    background-color #FFF
     
+    &:hover
+      box-shadow 0 3px 15px rgba(0, 0, 0, 0.08)
+
     &:last-child
       border-bottom 0px
       margin-bottom 0px

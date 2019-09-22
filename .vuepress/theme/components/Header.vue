@@ -49,7 +49,7 @@ export default {
   }
 
   &:hover {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04), 0 6px 6px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -104,7 +104,7 @@ export default {
       margin-left: 20px;
 
       input {
-        border-radius: 5px;
+        border-radius: 20px;
         transition: all 0.5s;
         border: 1px solid #cecece;
 
