@@ -11,7 +11,8 @@ timeToRead: 5
 headerImage: "https://source.unsplash.com/random/800x400" 
 ---
 
-# Archive Vuepress blog template
+# Vuepress blog template
+
 
 ---
 __Advertisement :)__

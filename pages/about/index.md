@@ -1,1 +1,5 @@
+---
+layout: AboutLayout
+---
+
 # About page

@@ -3,6 +3,10 @@ module.exports = {
   description: "vuepress blog template",
   theme: "@vuepress/theme-blog",
   themeConfig: {
+    personalPhoto: "/images/personalPhoto.png", // the base directory for this image is the public directory
+    fullName: "Ahmad Mostafa", // appears in about page
+    bio:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam voluptas nam dolorum minus consequuntur fugit quis repellendus hic vero praesentium facilis amet minima officia impedit, expedita quo veniam perferendis.", // appears in about page
     nav: [
       {
         text: "Home",
