@@ -1,51 +1,64 @@
 module.exports = {
-  title: "Vuepress blog template",
-  description: "vuepress blog template",
-  theme: "@vuepress/theme-blog",
+  title: "VuePress Blog Example",
+  description: "This is a blog example built by VuePress",
+  theme: 'modern-blog',
   themeConfig: {
-    personalPhoto: "/images/personalPhoto.png", // the base directory for this image is the public directory
-    fullName: "Ahmad Mostafa", // appears in about page
-    bio:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam voluptas nam dolorum minus consequuntur fugit quis repellendus hic vero praesentium facilis amet minima officia impedit, expedita quo veniam perferendis.", // appears in about page
+    summary: true,
+    summaryLength: 400,
+    heroImage: "https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2293&q=80", // this is the default value you can override it.
+    head: [ // this will be embedded to the <head /> section.
+      ['link', { rel: "shortcut icon", href: "/favicon.png" }]
+    ],
     nav: [
       {
         text: "Home",
-        link: "/"
+        link: "/",
+        icon: "el-icon-house"
       },
       {
-        text: "Archive",
-        link: "/archive/"
-      },
-      {
-        text: "Tags",
-        link: "/tag/"
+        text: "Projects",
+        link: "/pages/projects/",
+        icon: "el-icon-folder"
       },
       {
         text: "About",
-        link: "/pages/about/"
-      }
+        link: "/pages/about/",
+        icon: "el-icon-user"
+      },
     ],
+    sitemap: true, // enables sitemap plugin
+    hostname: "https://yourdomain.com/", // required for sitemap
+    disqus: "disquswebsiteshortname", // if you want to incorporate Disqus for comments replace this value else just get rid of it
+    socialShare: true, // enables social share
+    socialShareNetworks: ["facebook", "twitter"], // required for social share plugin
+    googleAnalytics: "", // Google Analytics tracking ID
+    about: {
+      fullName: "Ahmad Mostafa",
+      bio: "I am a passionate Software Engineer, I love Vue.js ♥ ...",
+      // image: "/images/image.png" / refers to the public directory
+      image: "https://www.ahmadmostafa.com/images/bg_1.png"
+    },
     footer: {
       contact: [
         {
           type: "github",
-          link: "https://github.com/z3by/"
+          link: "https://github.com/z3by"
         },
         {
           type: "instagram",
-          link: "https://instagram.com/z3bya/"
-        },
-        {
-          type: "facebook",
-          link: "https://facebook.com/ahmad.mostafa.z3by/"
+          link: "#"
         },
         {
           type: "linkedin",
-          link: "https://www.linkedin.com/in/z3by/"
+          link: "#"
         },
         {
           type: "twitter",
-          link: "https://twitter.com/ahmad_mostafa10/"
+          link: "#"
+        },
+        {
+          type: "youtube",
+          link: "#"
         }
       ],
       copyright: [
@@ -54,56 +67,10 @@ module.exports = {
           link: "https://policies.google.com/privacy?hl=en-US"
         },
         {
-          text: `MIT Licensed | Copyright © ${new Date().getFullYear()}-present`,
+          text: "MIT Licensed | Copyright © 2018-present Vue.js",
           link: ""
         }
       ]
     }
-  },
-  plugins: [
-    [
-      "@vuepress/blog",
-      {
-        directories: [
-          {
-            id: "post",
-            dirname: "_posts",
-            path: "/",
-            layout: "IndexPost",
-            itemLayout: "Post",
-            itemPermalink: "/:year/:month/:day/:slug",
-            pagination: {
-              perPagePosts: 5
-            }
-          },
-          {
-            id: "archive",
-            dirname: "_archive",
-            path: "/archive/",
-            layout: "IndexArchive",
-            itemLayout: "Post",
-            itemPermalink: "/archive/:year/:month/:day/:slug",
-            pagination: {
-              perPagePosts: 5
-            }
-          }
-        ],
-        frontmatters: [
-          {
-            id: "tag",
-            keys: ["tag", "tags"],
-            path: "/tag/",
-            layout: "Tags",
-            frontmatter: { title: "Tags" },
-            itemlayout: "Tag",
-            pagination: {
-              perPagePosts: 5
-            }
-          }
-        ]
-      }
-    ],
-    ["@vuepress/back-to-top"],
-    ["@vuepress/last-updated"]
-  ]
+  }
 };

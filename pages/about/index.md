@@ -1,5 +1,4 @@
 ---
 layout: AboutLayout
 ---
-
-# About page
+# About Me

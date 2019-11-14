@@ -32,5 +32,8 @@
     "@vuepress/plugin-blog": "^1.2.5",
     "@vuepress/theme-blog": "^1.2.5",
     "vuepress": "^1.1.0"
+  },
+  "dependencies": {
+    "vuepress-theme-modern-blog": "^2.0.4"
   }
 }
