@@ -6,6 +6,7 @@ a vuepress blog example
 
 ## [Live Demo](https://vuepress-blog-template.z3by.com/)
 
+## [Tutorial](https://www.ahmadmostafa.com/how-to-create-vuepress-blog/)
 ## Getting Started
 
 to start create a vuepress blog using this template you need to :
