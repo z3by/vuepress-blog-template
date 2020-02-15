@@ -1,0 +1,27 @@
+name: Lint
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: markdownlint-cli
+      uses: z3by/ahmadmostafa.com/.github/workflows/docker/lint/Dockerfile
+      env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+    - name: Commit files
+      run: |
+        echo ${{ github.ref }}
+        git add .
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "ci: Lint documentation files" -a | exit 0
+    - name: Push changes
+      if: github.ref == 'refs/heads/master'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.TOKEN }}

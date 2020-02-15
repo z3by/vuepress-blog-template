@@ -2,11 +2,10 @@
 
 a vuepress blog example
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8ed35817-7428-4e82-85f8-fe85b6ae7b2c/deploy-status)](https://app.netlify.com/sites/loving-tereshkova-33863e/deploys)
-
-## [Live Demo](https://vuepress-blog-template.z3by.com/)
+## [Live Demo](https://vp-modern.z3by.com/)
 
 ## [Tutorial](https://www.ahmadmostafa.com/how-to-create-vuepress-blog/)
+
 ## Getting Started
 
 to start create a vuepress blog using this template you need to :
@@ -46,9 +45,9 @@ yarn dev
 
 1. generate the static files using:
 
-```bash
-yarn build
-```
+    ```bash
+    yarn build
+    ```
 
 2. deploy the content of `.vuepress/dist` to any hosting service, or you can use [netlify](https://www.netlify.com/) for continues deployment.
 
@@ -57,6 +56,7 @@ yarn build
 - [vuepress](https://vuepress.vuejs.org/)
 - [@vuepress/theme-blog](https://vuepress-theme-blog.ulivz.com/)
 - [@vuepress/plugin-blog](https://vuepress-plugin-blog.ulivz.com/)
+- [vuepress-theme-modern-blog](https://github.com/z3by/vuepress-theme-modern-blog/)
 
 ## Authors
 

@@ -1,0 +1,6 @@
+
+# Group 2
+User-agent: *
+Allow: /
+
+Sitemap: https://<YOUR_DOMAIN.com>/sitemap.xml

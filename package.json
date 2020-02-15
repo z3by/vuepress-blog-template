@@ -1,7 +1,7 @@
 {
   "name": "vuepress-blog-template",
   "version": "1.0.0",
-  "description": "vuepress blog template",
+  "description": "My Website & Blog",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev",
@@ -28,12 +28,8 @@
   },
   "homepage": "https://github.com/z3by/vuepress-blog-template#readme",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
-    "@vuepress/plugin-blog": "^1.2.5",
-    "@vuepress/theme-blog": "^1.2.5",
-    "vuepress": "^1.1.0"
-  },
-  "dependencies": {
-    "vuepress-theme-modern-blog": "^2.0.4"
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-crisp": "^1.0.0",
+    "vuepress-theme-modern-blog": "^2.4.1"
   }
 }
